@@ -1,6 +1,13 @@
 # make-it-state
 And experiemental typescript state managment library that makes state stores out of plain classes.
 
+### Installation
+
+Make sure you have [Node](https://nodejs.org/)
+installed and run:
+
+    npm install make-it-state
+
 ## Problem 
 I want to be able to write code in an object orienteted fashion, but this becomes problematic when you start converting that to state for React.js.  Further, I belive a simpler soultion for state managment can be proposed, than what Redux and MobX give us.
 
