@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "publish": "npm run test && npm run build",
+    "prepublish": "npm run test && npm run build",
     "build": "npm run clean && npm run build:commonjs && npm run build:umd && npm run build:umd:min",
     "build:commonjs": "tsc",
     "build:umd": "cross-env FILE_NAME=simple-object-state webpack",
@@ -21,8 +21,13 @@
   "bugs": {
     "url": "https://github.com/amitch6097/make-it-state/issues"
   },
-  "files": ["dist"],
-  "browserslist": [">0.2%", "not dead"],
+  "files": [
+    "dist"
+  ],
+  "browserslist": [
+    ">0.2%",
+    "not dead"
+  ],
   "homepage": "https://github.com/amitch6097/make-it-state#readme",
   "declaration": true,
   "devDependencies": {
@@ -43,8 +48,16 @@
       "\\.(js|jsx)$": "babel-jest"
     },
     "coverageDirectory": "dist/debug/coverage",
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
-    "testMatch": ["<rootDir>__tests__/**/*.(ts|tsx|js|jsx)"],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ],
+    "testMatch": [
+      "<rootDir>__tests__/**/*.(ts|tsx|js|jsx)"
+    ],
     "testPathIgnorePatterns": [
       "<rootDir>/__tests__/mock/",
       "<rootDir>/node_modules/"
