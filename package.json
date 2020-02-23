@@ -1,0 +1,53 @@
+{
+  "name": "[LIB_NAME]",
+  "author": "[YOUR_NAME]",
+  "version": "0.0.0",
+  "description": "[DESCRIPTION]",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "publish": "npm run test && npm run build",
+    "build": "npm run clean && npm run build:commonjs && npm run build:umd && npm run build:umd:min",
+    "build:commonjs": "tsc",
+    "build:umd": "cross-env FILE_NAME=simple-object-state webpack",
+    "build:umd:min": "cross-env NODE_ENV=production npm run build:umd",
+    "clean": "rimraf lib dist",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+[REPO_URL]"
+  },
+  "bugs": {
+    "url": "[ISSUES_URL]"
+  },
+  "files": ["dist"],
+  "browserslist": [">0.2%", "not dead"],
+  "homepage": "[READ_ME_URL]",
+  "declaration": true,
+  "devDependencies": {
+    "@types/jest": "^25.1.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "cross-env": "^6.0.3",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.0",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "license": "ISC",
+  "jest": {
+    "preset": "ts-jest",
+    "transform": {
+      "\\.(ts|tsx)$": "ts-jest",
+      "\\.(js|jsx)$": "babel-jest"
+    },
+    "coverageDirectory": "dist/debug/coverage",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
+    "testMatch": ["<rootDir>__tests__/**/*.(ts|tsx|js|jsx)"],
+    "testPathIgnorePatterns": [
+      "<rootDir>/__tests__/mock/",
+      "<rootDir>/node_modules/"
+    ]
+  }
+}
