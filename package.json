@@ -1,8 +1,8 @@
 {
-  "name": "[LIB_NAME]",
-  "author": "[YOUR_NAME]",
+  "name": "make-it-state",
+  "author": "Andrew Mitchell",
   "version": "0.0.0",
-  "description": "[DESCRIPTION]",
+  "description": "An experimental state management library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+[REPO_URL]"
+    "url": "git+https://github.com/amitch6097/make-it-state.git"
   },
   "bugs": {
-    "url": "[ISSUES_URL]"
+    "url": "https://github.com/amitch6097/make-it-state/issues"
   },
   "files": ["dist"],
   "browserslist": [">0.2%", "not dead"],
-  "homepage": "[READ_ME_URL]",
+  "homepage": "https://github.com/amitch6097/make-it-state#readme",
   "declaration": true,
   "devDependencies": {
     "@types/jest": "^25.1.1",
