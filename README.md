@@ -12,7 +12,7 @@ The idea of this library is to "extend" pure javascript classses into individual
 
 make-it-state only export one function, create. Create takes a Class, state, and actions as an argument.  The Class should be that Class that you would like to create a State Store from.  The state is the initial state the store will have and should provide all of the member variables from the Class you provided, that you want to be considered state.  Finally, Actions is an array of strings, which should be all of the public functions on the Class, that you want to give access to and will update state.  The return from create, is a function.  This final function is where you will provide any arguments that you would typically to instantiate the Class.
 
-```
+```ts
 import { create } from "make-it-state";
 
 class Counter {
@@ -44,5 +44,6 @@ counterStore.decrement(); //state: Object {count: 100}
 counterStore.unsubscribe(printState);
 ```
 Check out this Simple Exmple Above [here](https://codesandbox.io/s/make-it-state-simple-example-ms2fi)
+
 Check out this React Example [here](https://codesandbox.io/s/make--it-state-count-example-4tfed)
 
