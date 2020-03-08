@@ -1,6 +1,9 @@
 # make-it-state
 And experiemental typescript state managment library that makes state stores out of plain classes.
 
+[![npm version](https://img.shields.io/npm/v/make-it-state.svg?style=flat-square)](https://www.npmjs.com/package/make-it-state)
+[![npm downloads](https://img.shields.io/npm/dm/make-it-state.svg?style=flat-square)](https://www.npmjs.com/package/make-it-state)
+
 ### Installation
 
 Make sure you have [Node](https://nodejs.org/)
